@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+/* brand & typography styles */
+body {
+    padding: 0;
+    margin: 0;
+    color: #303030;
+    background-color: #fff;
+    font-family: 'Merriweather', serif; }
+
+h1, h2, h3, h4, h5, h6 {
+    color: #c93f3f;
+    font-family: 'Lato', sans-serif; }
+
+h1 {
+    font-size: 30px;
+    line-height: 120%;
+    margin-bottom: 30px; }
+
+@media only screen and (min-width: 720px) {
+    h1 { font-size: 4vw; } }
+
+p {
+    font-size: 18px;
+    line-height: 150%;
+    margin-bottom: 18px; }
+
+.first-section { padding: 50px 0 20px 0; }
+
+.text-header {
+    font-size: 50px;
+    text-align: center; }
+
+.tutorial-link {
+    color: #5a95ca;
+    font-size: 18px;
+    text-decoration: underline; }
+
+.tutorial-link:hover { color: #e55342; }
+
+
+/* Parallax effect styles
+ *
+ * Created by @patrykzabielski
+ * Modified by @cballenar
+ *
+ */
+#hero {
+    overflow: hidden;
+    position: relative;
+    z-index: -2;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("bg.jpg"); }
+
+.layer {
+    background-position: bottom center;
+    background-size: 110%;
+    background-repeat: no-repeat;
+    width: 100%;
+    position: fixed;
+    z-index: -1; }
+
+    /* Adjustments to background size based on size of screen */
+    @media only screen and (min-width: 840px) {
+        .layer { background-size: 90%; } }
+
+    @media only screen and (min-width: 960px) {
+        .layer { background-size: 80%; } }
+
+    @media only screen and (min-width: 1200px) {
+        .layer { background-size: 70%; } }
+
+/* set ratio of image to 16:9 by default */
+#hero, .layer { padding-bottom: 56.25%; }
+
+/* change ratio to 1:1 on portrait devices */
+@media screen and (orientation:portrait) {
+    #hero, .layer { padding-bottom: 100%; } }
+
+/* set background images */
+.layer-brides { background-image: url("brides.png"); }
+.layer-stairs-1 { background-image: url("stairs-1.png"); }
+.layer-stairs-2 { background-image: url("stairs-2.png"); }
+.layer-stairs-3 { background-image: url("stairs-3.png"); }
+.layer-stairs-4 { background-image: url("stairs-4.png"); }
+.layer-stairs-5 { background-image: url("stairs-5.png"); }
+.layer-stairs-6 { background-image: url("stairs-6.png"); }
+.layer-stairs-7 { background-image: url("stairs-7.png"); }
+.layer-stairs-8 { background-image: url("stairs-8.png"); }
+.layer-confetti-1 { background-image: url("confetti-1.png"); }
+.layer-confetti-2 { background-image: url("confetti-2.png"); }
+.layer-confetti-3 { background-image: url("confetti-3.png"); }
+.layer-confetti-4 { background-image: url("confetti-4.png"); }
+.layer-confetti-5 { background-image: url("confetti-5.png"); }
+.layer-confetti-6 { background-image: url("confetti-6.png"); }
